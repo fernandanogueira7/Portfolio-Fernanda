@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: #1E1E1E;
+    
+}
+
+header {
+    background-color: #A4BAB7;
+    padding: 20px 2cqi;
+}
+
+header > menu > h1 {
+    font-family: 'Modak', Arial, Helvetica, sans-serif;
+}
+
+menu > ul  {
+    list-style-type: none;
+    font-family: 'Modak', Arial, Helvetica, sans-serif;
+    
+}
