@@ -35,11 +35,11 @@ header > h1 {
 }
 
 menu {
+    z-index: 99;
     display: none;
     position: absolute;
-    top: 60px;
-    right: 20px;
-    flex-direction: column;
+    top: auto;
+    right: auto;
 }
 
 menu > ul  {
@@ -53,7 +53,7 @@ menu > ul  {
 }
 
 menu > ul > li {
-    display: inline-block;
+    display: block;
 }
 
 menu > ul > li > a {
@@ -65,18 +65,20 @@ menu > ul > li > a {
     border-radius: 20px;
 }
 
-a:hover {
+menu > ul > li > a:hover {
     color: #EFF2C0;
     background-color: #1E1E1E;
     cursor: pointer;
+    z-index: 10;
 }
 
 main > div > #anime img {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.377);
+    margin-top: 150px;
 }
 
 .container {  

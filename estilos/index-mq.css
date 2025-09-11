@@ -8,14 +8,23 @@
     header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
     }
 
     menu {
-        display: block;
+        display: block;  
     }
 
-    menu > ul > li {
-        display: inline-block;
+    menu > ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    menu > ul > li > a {
+        background-color: #A4BAB7;
+        color: #EFF2C0;
     }
 
     main {
