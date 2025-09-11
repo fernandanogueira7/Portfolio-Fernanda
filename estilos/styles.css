@@ -15,15 +15,37 @@ header {
     align-items: center;
     background-color: #A4BAB7;
     padding: 20px 20px;
+    position: relative;
 }
 
 header > h1 {
     font-family: 'Knewave', Arial, Helvetica, sans-serif;
 }
 
+#burguer {
+    color: #1E1E1E;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    color: #EFF2C0;
+}
+
+menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    flex-direction: column;
+}
+
 menu > ul  {
     font-family: 'Knewave', Arial, Helvetica, sans-serif;
     display: flex;
+    flex-direction: column;
     gap: 20px;
     list-style-type: none;
     padding: 0px;
@@ -35,36 +57,31 @@ menu > ul > li {
 }
 
 menu > ul > li > a {
+    display: block;
     text-decoration: none;
+    background-color: #EFF2C0;
     color: #1E1E1E;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 a:hover {
     color: #EFF2C0;
+    background-color: #1E1E1E;
     cursor: pointer;
 }
 
 main > div > #anime img {
-    width: 500px;
-    height: 500px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     border-radius: 50%;
-}
-
-.container h1 {
-    font-family: 'Knewave', Arial, Helvetica, sans-serif;
-    font-size: 5em;
-    color: #EFF2C0;
-}
-
-.container p {
-    font-family: 'Lexend', Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-    color: white;
+    box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.377);
 }
 
 .container {  
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     top: 50%;
@@ -75,3 +92,22 @@ main > div > #anime img {
     padding: 40px 20px;
     transform: translate(0%, 20%);
 }
+
+.bottom {
+    margin-top: auto;
+}
+
+.container h1 {
+    font-family: 'Knewave', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: #EFF2C0;
+}
+
+.container p {
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
