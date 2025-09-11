@@ -1,6 +1,55 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+    #burguer {
+        display: none;
+    }
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    menu {
+        position: static; /*remover position*/
+        display: block;
+        margin-left: auto;
+    }
+
+    menu > ul {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    menu > ul > li > a {
+        background-color: #A4BAB7;
+    }
+
+    menu > ul > li > a:hover {
+        background-color: #A4BAB7;
+        color: #EFF2C0;
+    }
+
+    main {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    .container h1 {
+        font-size: 3.5em;
+    }
+
+    .container p {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
     #burguer {
         display: none;
     }
@@ -9,17 +58,103 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0px;
-        padding: 0px;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
     }
 
     menu {
-        display: block;  
+        position: static;
+        display: block;
+        margin-left: auto;
     }
 
     menu > ul {
         display: flex;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    main > div > #anime img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .container {
+        display: flex;
         flex-direction: row;
+        align-items: center;
+        gap: 100px;
+        padding: 40px 20px;
+    }
+
+
+    .container h1 {
+        font-size: 4.4em;
+    }
+
+    .container p {
+        font-size: 1.4em;
+    }
+
+}
+
+    /*main > div > #anime img {
+    width: 450px;
+    height: 450px;
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .container .bottom {
+        text-align: left;
+        max-width: 300px;
+    }
+
+    .container h1 {    
+        font-size: 4.4em;
+    }
+
+
+    .container p {
+        font-size: 1.6em;
+    }*?
+    
+}
+    
+    
+
+/*@media screen and (min-width: 768px){
+    #burguer {
+        display: none;
+    }
+
+    /*header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }*/
+
+    /*menu {
+        display: block;  
+    }*/
+    /*header > menu > ul > li {
+        display: flex;
+        flex-direction: row;   
     }
 
     menu > ul > li > a {
@@ -43,8 +178,8 @@
     .container p {
         font-size: 1.3em;
     }
-}
-
+}*/
+/*
 @media screen and (min-width:992px) {
     #burguer {
         display: none;
@@ -91,4 +226,4 @@
     .container p {
         font-size: 1.6em;
     }
-}
+}*/
