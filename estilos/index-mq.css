@@ -5,6 +5,11 @@
         display: none;
     }
 
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
     menu {
         display: block;
     }
@@ -15,5 +20,66 @@
 
     main {
         width: 768px;
+    }
+
+    main > div > #anime img {
+    width: 370px;
+    height: 370px;
+    }
+
+    .container h1 {
+        font-size: 3.5em;
+    }
+
+    .container p {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #burguer {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 992px;
+    }
+
+    main > div > #anime img {
+    width: 450px;
+    height: 450px;
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .container .bottom {
+        text-align: left;
+        max-width: 500px;
+    }
+
+    .container h1 {    
+        font-size: 4.4em;
+    }
+
+
+    .container p {
+        font-size: 1.6em;
     }
 }
