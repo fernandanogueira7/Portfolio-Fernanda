@@ -6,21 +6,72 @@
 }
 
 body, html {
-    background-color: #1E1E1E;
-    
+    background-color: #1E1E1E; 
 }
 
 header {
+    display: flex; /* ativar o flexbox */
+    justify-content: space-between; /*distribuir os elementos para as pontas*/
+    align-items: center;
     background-color: #A4BAB7;
-    padding: 20px 2cqi;
+    padding: 20px 20px;
 }
 
-header > menu > h1 {
-    font-family: 'Modak', Arial, Helvetica, sans-serif;
+header > h1 {
+    font-family: 'Knewave', Arial, Helvetica, sans-serif;
 }
 
 menu > ul  {
+    font-family: 'Knewave', Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 20px;
     list-style-type: none;
-    font-family: 'Modak', Arial, Helvetica, sans-serif;
-    
+    padding: 0px;
+    margin: 0px;
+}
+
+menu > ul > li {
+    display: inline-block;
+}
+
+menu > ul > li > a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+a:hover {
+    color: #EFF2C0;
+    cursor: pointer;
+}
+
+main > div > #anime img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.container h1 {
+    font-family: 'Knewave', Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    color: #EFF2C0;
+}
+
+.container p {
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    color: white;
+}
+
+.container {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    transform: translate(0%, 20%);
 }
